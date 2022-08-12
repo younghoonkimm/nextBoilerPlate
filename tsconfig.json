@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "baseUrl": "src",
+    "paths": {
+      "@styles/*": ["styles/*"],
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@store/*": ["store/*"],
+      "@api/*": ["api/*"],
+      "@actions/*": ["src/actions/*"],
+      "@common/*": ["components/common/*"],
+      "@common": ["components/common"],
+      "@svgs/*": ["svgs/*"],
+      "@utils/*": ["utils/*"],
+      "@axios": ["api/axios.ts"]
+    },
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "stories"],
+  "exclude": ["node_modules"]
+}
