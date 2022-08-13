@@ -7,9 +7,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "airbnb",
-    "airbnb/hooks",
-    "aribnb/typescript",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -21,10 +18,21 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint"],
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
+  },
   rules: {
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    quotes: [2, "double", { avoidEscape: false }],
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [0],
     "import/extensions": ["off"],
   },
 };

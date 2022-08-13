@@ -1,15 +1,16 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // 초기 상태 타입
-export type UserState = {
-  isLoggedIn: boolean;
-  userData: any;
-};
 
 // 액션 Payload 타입
 export type LoginPayload = {
   userId: string;
   password: string;
+};
+
+export type UserState = {
+  isLoggedIn: boolean;
+  userData: any;
 };
 
 // 초기 상태

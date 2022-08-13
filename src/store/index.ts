@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { createWrapper } from "next-redux-wrapper";
 import logger from "redux-logger";
-import rootReducer from "store/modules";
+import rootReducer from "./modules";
 
 // const store = () => {
 //   const store = configureStore({ reducer: rootReducer });
