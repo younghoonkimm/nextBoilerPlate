@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     es2021: true,
-    jest: true,
+    "jest/globals": true,
   },
   extends: [
     "eslint:recommended",
