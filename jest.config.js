@@ -12,6 +12,7 @@ const customJestConfig = {
 
     "^@/public/(.*)$": "<rootDir>/public/$1",
   },
+  modulePathIgnorePatterns: ["<rootDir>/src/utils"],
   setupFilesAfterEnv: ["./jest.setup.js"],
   clearMocks: true,
   collectCoverage: true,
@@ -22,12 +23,13 @@ const customJestConfig = {
     "!**/node_modules/**",
   ],
   coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 80,
-    },
+    // set coverage
+    // global: {
+    //   branches: 80,
+    //   functions: 80,
+    //   lines: 80,
+    //   statements: 80,
+    // },
   },
   testEnvironment: "jest-environment-jsdom",
 };
