@@ -9,4 +9,10 @@ yarn install
 yarn dlx @yarnpkg/sdks vscode (vscode 사용시)
 ```
 
-redux toolkit & styled-components 설치 해둠 ^^
+- [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Styled-Components](https://styled-components.com/)
+- [Redux-toolkit](https://redux-toolkit.js.org/)
+- [EsLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- **Cypress 추가 예정**
