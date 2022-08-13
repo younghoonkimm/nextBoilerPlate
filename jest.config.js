@@ -12,7 +12,8 @@ const customJestConfig = {
 
     "^@/public/(.*)$": "<rootDir>/public/$1",
   },
-  modulePathIgnorePatterns: ["<rootDir>/src/utils"],
+  // ignore patterns
+  // transformIgnorePatterns:[]
   setupFilesAfterEnv: ["./jest.setup.js"],
   clearMocks: true,
   collectCoverage: true,
@@ -20,7 +21,6 @@ const customJestConfig = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "!./src/**/_*.{js,jsx,ts,tsx}",
     "!**/*.d.ts",
-    "!**/node_modules/**",
   ],
   coverageThreshold: {
     // set coverage
