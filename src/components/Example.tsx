@@ -5,9 +5,9 @@ function Example() {
   const { isLoggedIn, login } = useUser();
   return (
     <div>
-      <button type="button" onClick={login}>
+      {/* <button type="button" onClick={login}>
         logout
-      </button>
+      </button> */}
     </div>
   );
 }

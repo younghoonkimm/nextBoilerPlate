@@ -3,13 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint-fix": "eslint '**/*,{ts,tsx}' --ext .ts,.tsx --fix'",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.4",
+    "husky": "^8.0.1",
     "next": "12.2.5",
     "next-redux-wrapper": "^7.0.5",
     "react": "18.2.0",
@@ -42,6 +51,7 @@
     "eslint-config-next": "12.2.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   },
