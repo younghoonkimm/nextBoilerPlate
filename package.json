@@ -10,7 +10,9 @@
     "lint": "next lint",
     "lint-fix": "eslint \"**/*.{ts,tsx}\" --ext .ts,.tsx --fix",
     "lint-staged": "lint-staged",
-    "test-coverage": "jest"
+    "test-coverage": "jest",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run"
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
@@ -19,6 +21,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.4",
+    "cypress": "^10.4.0",
     "husky": "^8.0.1",
     "next": "12.2.5",
     "next-redux-wrapper": "^7.0.5",
@@ -33,6 +36,7 @@
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
+    "@testing-library/cypress": "^8.0.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@types/babel__core": "^7",
