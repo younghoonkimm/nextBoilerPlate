@@ -15,4 +15,4 @@ yarn dlx @yarnpkg/sdks vscode (vscode 사용시)
 - [Redux-toolkit](https://redux-toolkit.js.org/)
 - [EsLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- **Cypress 추가 예정**
+
